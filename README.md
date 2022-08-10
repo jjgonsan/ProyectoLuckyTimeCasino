@@ -6,17 +6,18 @@ contraseña: admin1234
 
 usuario: root
 contraseña: admin1234
-///////////////////////////////////////CONFIGURACIÓN DE LA MÁQUINA VIRTUAL//////////////////////////////////////////////////////
-- Si da fallos por alguna casualidad la máquina virtual, dejo escritas las configuraciones que se han realizado para que se pueda crear una copia a mano
-y los códigos del proyecto y la base de datos dentro del Google Drive facilitado con la entrega de este proyecto. 
+
+CONFIGURACIÓN DE LA MÁQUINA VIRTUAL
+
+- Las configuraciones que se han utilizado están basadas en una máquina virtual con las especificaciones indicadas a continuación.
 
 - 2 GB de RAM, 80GB de disco duro, 2 núcleos de procesador.
 
 - Instalar Debian 10 con interfaz gráfica.
 
-- No es necesario instalar el servidor SSH ya que no se va a editar el código. Se puede ver desde fuera gracias a la copia añadida en el Google Drive.
+- No es necesario instalar el servidor SSH si no se va a editar el código
 
-- Una vez instalado Debian 10 (credenciales que se deben usar arriba y en la memoria del proyecto). Instalar XAMPP ver. 8.0.12 (Facilitado en el Google Drive del proyecto).
+- Una vez instalado Debian 10 (credenciales que se deben usar arriba). Instalar XAMPP ver. 8.0.12.
 
 - Añadir net tools para que funcione XAMPP mediante = sudo apt install net-tools
 
@@ -26,12 +27,12 @@ En el apartado: #User Privilege specification
 Se debe añadir: administrador ALL=(ALL:ALL) ALL
 debajo de los privilegios de root. Se guarda el documento.
 
-- Para añadir los archivos del proyecto se puede hacer mediante el servidor SSH o instalando guest-additions, o entrando en el Google Drive y descargando los archivos. (como prefiera el profesor).
+- Para añadir los archivos del proyecto se puede hacer mediante el servidor SSH o instalando guest-additions.
 
 - Editar el archivo /opt/lampp/etc/httpd.conf y descomentar los virtualHost.
 
-- Editar el archivo httpd-vhosts.conf y añadir: 
-
+- Editar el archivo httpd-vhosts.conf y añadir (sin las comillas iniciales y finales): 
+"
 <VirtualHost *:80>
     DocumentRoot "/opt/lampp/htdocs/luckytime"
     DirectoryIndex index.php
@@ -43,7 +44,7 @@ debajo de los privilegios de root. Se guarda el documento.
 </Directory>
 </VirtualHost>
 
-
+"
 - Necesitamos configurar el fichero hosts con los siguientes parámetros:
 sudo nano /etc/hosts
 
