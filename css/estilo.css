@@ -1,0 +1,268 @@
+.logo { /*Le damos estilo al logo principal de index.php para colocarlo en el centro.*/
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ /*Le damos estilo a los logos de los juegos que se encuentran en main.php*/
+ .logo2 {
+     display:block;
+     margin-left: auto;
+     margin-right: auto;
+     width:100px;
+     height:100px;
+ }
+.font{/*Le damos estilo a la fuente de nuestras frases y las centramos.*/
+     font-style:italic;
+     text-align: center;
+ }
+ .formu {/*De forma similar a las anteriores, lo hacemos con el formulario.*/
+     display: block;
+     margin-left: auto;
+     margin-right:auto;
+ }
+ body {/*Le damos color de fondo a nuestra etiqueta body.*/
+     background-color:#CFD8DC;
+    margin-left: auto;
+    margin-right:auto;
+ }
+ p {/*Damos estilo a los párrafos que utilizaremos en nuestra página web.*/
+
+     text-align:center;
+     font-style: italic;
+     margin-right: auto;
+     margin-left: auto;
+
+ }
+ .container {/*Para mantener un orden visual con el footer, guardamos todo el contenido del body dentro de un div con esta clase.*/
+    min-height: calc(100vh - 250px);
+
+ }
+ .header {/*Creamos un header donde incluiremos un menú para el usuario.*/
+     position: relative;
+     background:#141414;
+     color:#FFFFFF;
+     height:200px;
+ }
+
+ .menuNav {/*Creamos la clase que utilizaremos en el div donde almacenaremos los links de la barra de menú de nuestro header.*/
+    background-color: #141414;
+    overflow:hidden;
+ }
+ .menuNav img {/*Damos estilo a la imagen de nuestro logo para que quede organizada dentro de nuestro header.*/
+    float:left;
+    cursor:pointer;
+ }
+ .menuNav a { /*Damos estilo a la barra de menú que hemos creado.*/
+     cursor: pointer;
+     float:left;
+     color:#FFFFFF;
+     text-align: center;
+     padding: 14px 16px;
+     font-size:17px;
+     cursor: pointer;
+ }
+ .audiocontainer {/*Configuración de los controles de audio.*/
+    max-width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;    
+    }
+
+ .monedero {/*Establecemos el orden y el estilo que tendrá la interfaz del monedero del usuario.*/
+    display: flex;
+    font-style: italic;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    margin: 14px;
+    color:#333333;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #FFEE66;
+    box-shadow: 0px 1px 0px 0px #FFF6AF;
+	background:linear-gradient(to bottom, #FFEC64 5%, #FFAB23 100%);
+	background-color:#FFEC64;
+	border-radius:6px;
+	border:1px solid #FFAA22;
+ }
+.footer {/*Creamos la plantilla para nuestro footer.*/
+    position:relative;
+    background: #141414  ;
+    color: #FFFFFF;
+    height:250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.signature{/*Utilizamos esta configuración para la firma del código.*/
+    background: #263238;
+    color: #FFFFFF;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 50px;
+    width: 100%;
+    padding-top: 20px;
+}
+ .botonformu {/*Estilo del botón para nuestro formulario de envío y otros botones de nuestra aplicación web.*/
+     display:block;
+     margin-top: 1%;
+     margin-left: auto;
+     margin-right: auto;
+     background: #000000;
+     color: #FFFFFF;
+ }
+
+.new-user {/*Estilo del span de registro de nuevo usuario.*/
+    font-style:italic;
+    display:block;
+    text-align:center;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Le damos estilo a la clase que utilizaremos en la página "about us" de Lucky Time Casino.*/
+.about {
+    font-style: italic;
+    font-family: Verdana;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+/*///////////////////////////////////////ESTILO DE TABLAS DE USERDATA.PHP Y FAVGAMES.PHP/////////////////////////////////////////////////////////////////*/
+/*Le damos estilo a las tablas donde almacenamos los datos de usuario y los datos de sus juegos favoritos.*/
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+/*Damos estilo a los títulos de las columnas de la tabla y al contenido de estas.*/
+.idTable{
+    text-align:center;
+  }  
+/*Añadimos un borde negro leve para diferenciar los datos entre sí.*/
+table td, table th {
+    border: 1px solid black;
+}
+table td{
+  text-align:justify;
+}
+table th {
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    background: #f2f212;
+}
+/*Damos estilo a nuestro botón para añadir a favoritos los juegos.*/
+#favBtn {
+    text-align: left;
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    background: #d3e234;
+}
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ESTILOS PARA LA TRAGAPERRAS////////////////////////////////////////////////////////////////////////*/
+
+#resetMoney { /*Deshabilitamos por defecto el botón de reiniciar el monedero hasta que se añadan monedas de juego.*/
+    display:none;
+}
+#warn { /*Añadimos un aviso para que el usuario sepa que debe de ingresar monedas para empezar a jugar.*/
+    display:flex;
+}
+/*Alineamos la máquina tragamonedas para que todas nuestras imágenes estén bien ordenadas.*/
+#jackpot {
+    text-align:center;
+}
+/*Creamos una clase para darle estilo a los contenedores que tendrán en su interior las imágenes de la tragaperras.*/
+.boxClass {
+    display:inline-block;
+    margin:auto;
+    width:150px;
+    height:150px;
+    border:1px solid black;
+    text-align:center;
+}
+/*Creamos una clase para darle estilo a las imágenes de la tragaperra. De esta forma, aparecerán centradas y con un tamaño correcto.*/
+.boxImg {
+    margin-top:25px;
+    margin-left:10px;
+    width:100px;
+    height:100px;
+}
+/*Diseñamos el botón para comenzar la tirada en la tragaperras.*/
+#jackpotBut {
+    display:block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #FFEE66;
+    box-shadow: 0px 1px 0px 0px #FFF6AF;
+	background:linear-gradient(to bottom, #FFEC64 5%, #FFAB23 100%);
+	background-color:#FFEC64;
+	border-radius:6px;
+	border:1px solid #FFAA22;
+    margin: auto auto;
+    margin-top:15px;
+}
+/*////////////////////////////////////////////////////ESTILOS PARA LA RULETA //////////////////////////////////////////////////////////////////////*/
+#roulette {
+    text-align: center;
+}
+#selectColor {
+    display:flex;
+    margin: auto auto;
+    margin-top: 15px;
+}
+/*Le damos estilos a ambos botones de la ruleta para que queden mejor estéticamente.*/
+#rouletteBtn {
+    display:flex;
+	cursor:pointer;
+	color:#333333;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #FFEE66;
+    box-shadow: 0px 1px 0px 0px #FFF6AF;
+	background:linear-gradient(to bottom, #FFEC64 5%, #FFAB23 100%);
+	background-color:#FFEC64;
+	border-radius:6px;
+	border:1px solid #FFAA22;
+    margin: auto auto;
+    margin-top:15px;
+}
+#roulettePlay {
+    display:none;
+	cursor:pointer;
+	color:#333333;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #FFEE66;
+    box-shadow: 0px 1px 0px 0px #FFF6AF;
+	background:linear-gradient(to bottom, #FFEC64 5%, #FFAB23 100%);
+	background-color:#FFEC64;
+	border-radius:6px;
+	border:1px solid #FFAA22;
+    margin: auto auto;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
